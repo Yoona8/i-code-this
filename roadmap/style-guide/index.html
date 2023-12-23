@@ -5,8 +5,10 @@
   <title>Title</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Open+Sans:wght@400;700;800&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,700;1,500&display=swap"
     rel="stylesheet"
   >
   <link rel="stylesheet" href="styles.css">
@@ -16,6 +18,34 @@
   <h1 class="visually-hidden">UI design</h1>
   <article class="ui-block">
     <h2 class="ui-block__title">Buttons</h2>
+    <table class="ui-block__content">
+      <thead>
+        <tr>
+          <th class="ui-block__cell summary">Default</th>
+          <th class="ui-block__cell summary">Hovered</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="ui-block__cell">
+            <button class="button button--primary" type="button">Primary Button</button>
+          </td>
+          <td class="ui-block__cell">
+            <button class="button button--primary" type="button" hovered>
+              Primary Button
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td class="ui-block__cell">
+            <button class="button button--secondary" type="button">Secondary Button</button>
+          </td>
+          <td class="ui-block__cell">
+            <button class="button button--secondary" type="button" hovered>Secondary Button</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
   </article>
   <article class="ui-block">
     <h2 class="ui-block__title">Colors</h2>

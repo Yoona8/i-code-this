@@ -9,6 +9,7 @@
   --color-title-1: #1A2950;
   --color-text-0: #1A2950;
   --color-text-1: #767E96;
+  --color-text-contrast: #FFFFFF;
 }
 
 html,
@@ -18,6 +19,9 @@ body {
 }
 
 body {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.2145;
   font-family: 'Montserrat', Arial, sans-serif;
 }
 
@@ -47,13 +51,13 @@ body {
 }
 
 .ui-block {
-  padding: clamp(20px, 10vh, 70px) 0 clamp(20px, 10vh, 50px);
+  padding: clamp(20px, 10vh, 50px) 0;
   border-left: 1px solid var(--color-bg-1);
 }
 
 .ui-block__title {
   display: inline-block;
-  margin: 0;
+  margin: 0 0 20px;
   padding: 4px 10px 3px 30px;
   font-weight: 500;
   font-size: 14px;
@@ -66,4 +70,48 @@ body {
 
 .ui-block__title-description {
   text-transform: capitalize;
+}
+
+.ui-block__content {
+  padding-left: calc(30px - 8px);
+}
+
+.ui-block__cell {
+  padding: 8px;
+}
+
+.summary {
+  font-weight: 500;
+  font-size: 12px;
+  font-style: italic;
+  color: var(--color-text-1);
+}
+
+.button {
+  display: block;
+  min-width: 204px;
+  margin: 0;
+  padding: 16px 20px 17px;
+  font: inherit;
+  font-weight: 500;
+  font-size: 14px;
+  background-color: transparent;
+  border: 0;
+  border-radius: 5px;
+  transition: box-shadow 0.1s ease-in-out;
+}
+
+.button--primary {
+  color: var(--color-text-contrast);
+  background-color: var(--color-bg-0);
+}
+
+.button--secondary {
+  color: var(--color-text-0);
+  background-color: var(--color-bg-1);
+}
+
+.button:hover,
+.button[hovered] {
+  box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.1);
 }
