@@ -9,6 +9,7 @@
   --color-title-1: #1A2950;
   --color-text-0: #1A2950;
   --color-text-1: #767E96;
+  --color-text-2: #ACAEB0;
   --color-text-contrast: #FFFFFF;
 }
 
@@ -73,6 +74,10 @@ body {
 }
 
 .ui-block__content {
+  padding: 0 0 0 30px;
+}
+
+.buttons {
   padding-left: calc(30px - 8px);
 }
 
@@ -115,3 +120,42 @@ body {
 .button[hovered] {
   box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.1);
 }
+
+.colors {
+  display: flex;
+  margin: 0;
+  padding-top: 30px;
+  padding-left: 20px;
+  font-size: 12px;
+  list-style: none;
+}
+
+.colors__color {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 75px;
+  height: 75px;
+  padding: 10px;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  background-clip: content-box;
+}
+
+.colors__label {
+  display: block;
+  font-size: 10px;
+  font-style: italic;
+  text-align: center;
+  color: var(--color-text-2);
+}
+
+.title-1 {
+  font-size: 28px;
+}
+
+.title-2 {}
+
+.title-3 {}
+
+.link {}
