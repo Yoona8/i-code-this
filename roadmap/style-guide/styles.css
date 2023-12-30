@@ -48,6 +48,7 @@ body {
   max-width: 1368px;
   margin: 0 auto;
   padding: 0 clamp(20px, 10vh, 90px);
+  color: var(--color-text-0);
   background-color: var(--color-bg-3);
 }
 
@@ -150,12 +151,49 @@ body {
   color: var(--color-text-2);
 }
 
-.title-1 {
-  font-size: 28px;
+.fonts {
+  margin: 0;
+  padding: 10px 0 0 30px;
+  list-style: none;
 }
 
-.title-2 {}
+.fonts li {
+  margin-bottom: 24px;
+}
 
-.title-3 {}
+.title-1,
+.title-2,
+.title-3 {
+  font-weight: 700;
+  font-size: 28px;
+  color: var(--color-title-0);
+}
 
-.link {}
+.title-2 {
+  font-size: 16px;
+}
+
+.title-3 {
+  font-size: 14px;
+  color: var(--color-title-1);
+}
+
+.link {
+  font: inherit;
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.input-placeholder {
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--color-text-1);
+}
+
+.alert {
+  color: var(--color-alert);
+}
