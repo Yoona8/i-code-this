@@ -31,7 +31,7 @@
             <button class="button button--primary" type="button">Primary Button</button>
           </td>
           <td class="buttons__cell">
-            <button class="button button--primary" type="button" hovered>
+            <button class="button button--primary" type="button" data-hovered>
               Primary Button
             </button>
           </td>
@@ -41,7 +41,7 @@
             <button class="button button--secondary" type="button">Secondary Button</button>
           </td>
           <td class="buttons__cell">
-            <button class="button button--secondary" type="button" hovered>Secondary Button</button>
+            <button class="button button--secondary" type="button" data-hovered>Secondary Button</button>
           </td>
         </tr>
       </tbody>
@@ -179,6 +179,20 @@
   </article>
   <article class="ui-block">
     <h2 class="ui-block__title">Cards</h2>
+    <div class="ui-block__content cards">
+      <div class="cards__card">
+        <p class="cards__description summary">Default Card Background</p>
+        <div class="cards__example card">
+          <span class="visually-hidden">Default Card Example</span>
+        </div>
+      </div>
+      <div class="cards__card">
+        <p class="cards__description summary">Hovered Card Background</p>
+        <div class="cards__example card" data-hovered>
+          <span class="visually-hidden">Hovered Card Example</span>
+        </div>
+      </div>
+    </div>
   </article>
   <article class="ui-block">
     <h2 class="ui-block__title">Icons</h2>

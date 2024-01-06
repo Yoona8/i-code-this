@@ -120,7 +120,7 @@ body {
 }
 
 .button:hover,
-.button[hovered] {
+.button[data-hovered] {
   box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.1);
 }
 
@@ -155,12 +155,12 @@ body {
 
 .fonts {
   margin: 0;
-  padding: 10px 0 0 30px;
+  padding: 26px 0 0 30px;
   list-style: none;
 }
 
 .fonts li:not(:last-child) {
-  margin-bottom: 24px;
+  margin-bottom: 22px;
 }
 
 .title-1,
@@ -266,4 +266,30 @@ body {
 
 .input__field:disabled {
   background-color: var(--color-field-bg-disabled);
+}
+
+.cards {
+  display: grid;
+  gap: 18px;
+  grid-template-columns: repeat(2, 204px);
+}
+
+.cards__description {
+  margin: 0 0 14px;
+  text-align: center;
+}
+
+.cards__example {
+  width: 100%;
+  height: 132px;
+}
+
+.card {
+  border-radius: 5px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover,
+.card[data-hovered] {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
