@@ -11,6 +11,8 @@
   --color-text-1: #767E96;
   --color-text-2: #ACAEB0;
   --color-text-contrast: #FFFFFF;
+  --color-field-border: #D7D7D7;
+  --color-field-bg-disabled: #FCFBFC;
 }
 
 html,
@@ -82,7 +84,7 @@ body {
   padding-left: calc(30px - 8px);
 }
 
-.ui-block__cell {
+.buttons__cell {
   padding: 8px;
 }
 
@@ -157,7 +159,7 @@ body {
   list-style: none;
 }
 
-.fonts li {
+.fonts li:not(:last-child) {
   margin-bottom: 24px;
 }
 
@@ -188,7 +190,8 @@ body {
   text-decoration: underline;
 }
 
-.input-placeholder {
+.input-placeholder,
+.input__field::placeholder {
   font-weight: 500;
   font-size: 14px;
   color: var(--color-text-1);
@@ -196,4 +199,71 @@ body {
 
 .alert {
   color: var(--color-alert);
+}
+
+.inputs {
+  width: 100%;
+}
+
+.inputs__input {
+  max-width: 426px;
+}
+
+.inputs__description {
+  width: 116px;
+  padding: 23px 20px 12px;
+}
+
+.inputs__description--with-error {
+  padding-bottom: 32px;
+}
+
+.input {
+  position: relative;
+  margin: 0 0 12px;
+}
+
+.input--with-error {
+  padding-bottom: 20px;
+}
+
+.input__error {
+  position: absolute;
+  bottom: 0;
+  max-width: 100%;
+  margin-top: 3px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.input__label {
+  display: block;
+  margin-bottom: 6px;
+}
+
+.input__field {
+  box-sizing: border-box;
+  display: block;
+  min-height: 46px;
+  width: 100%;
+  margin: 0;
+  padding: 12px;
+  font: inherit;
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--color-text-0);
+  border: 0;
+  border-radius: 5px;
+  box-shadow: 0 0 0 1px var(--color-field-border);
+  outline: none;
+}
+
+.input__field:not(:disabled):focus,
+.input__field[data-focused] {
+  box-shadow: 0 0 0 2px var(--color-primary);
+}
+
+.input__field:disabled {
+  background-color: var(--color-field-bg-disabled);
 }
