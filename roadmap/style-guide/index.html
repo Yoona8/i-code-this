@@ -2,201 +2,58 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Title</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Design System</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,700;1,500&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Tilt+Neon&display=swap"
     rel="stylesheet"
   >
   <link rel="stylesheet" href="styles.css">
 </head>
 <body class="page">
 <main class="content">
-  <h1 class="visually-hidden">UI design</h1>
-  <article class="ui-block">
-    <h2 class="ui-block__title">Buttons</h2>
-    <table class="ui-block__content buttons">
-      <thead>
-        <tr>
-          <th class="buttons__cell summary">Default</th>
-          <th class="buttons__cell summary">Hovered</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td class="buttons__cell">
-            <button class="button button--primary" type="button">Primary Button</button>
-          </td>
-          <td class="buttons__cell">
-            <button class="button button--primary" type="button" data-hovered>
-              Primary Button
-            </button>
-          </td>
-        </tr>
-        <tr>
-          <td class="buttons__cell">
-            <button class="button button--secondary" type="button">Secondary Button</button>
-          </td>
-          <td class="buttons__cell">
-            <button class="button button--secondary" type="button" data-hovered>Secondary Button</button>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </article>
-  <article class="ui-block">
-    <h2 class="ui-block__title">Colors</h2>
-    <ul class="ui-block__content colors">
-      <li>
-        <span
-          class="colors__color"
-          style="--color-bg: #242E4C; --color-text: #FFFFFF"
-        >#242E4C</span>
-      </li>
-      <li>
-        <span
-          class="colors__color"
-          style="--color-bg: #738BFD; --color-text: #FFFFFF"
-        >#738BFD</span>
-      </li>
-      <li>
-        <span
-          class="colors__color"
-          style="--color-bg: #F55623; --color-text: #FFFFFF"
-        >#F55623</span>
-      </li>
-      <li>
-        <span
-          class="colors__color"
-          style="--color-bg: #767E96; --color-text: #FFFFFF"
-        >#767E96</span>
-      </li>
-      <li>
-        <span
-          class="colors__color"
-          style="--color-bg: #E9EAED; --color-text: #1A2950"
-        >#E9EAED</span>
-        <span class="colors__label">Only secondary btn background color</span>
-      </li>
-      <li>
-        <span
-          class="colors__color"
-          style="--color-bg: #F3F4F6; --color-text: #1A2950"
-        >#F3F4F6</span>
-      </li>
-    </ul>
-  </article>
-  <article class="ui-block">
-    <h2 class="ui-block__title">Inputs</h2>
-    <table class="ui-block__content inputs">
-      <thead class="visually-hidden">
-        <tr>
-          <th>Example</th>
-          <th>Description</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td class="inputs__input">
-            <p class="input">
-              <label class="input__label title-3" for="full-name">Full Name</label>
-              <input class="input__field" id="full-name" name="full-name" type="text" placeholder="ex: John Snow">
-            </p>
-          </td>
-          <td class="inputs__description summary">Default</td>
-        </tr>
-        <tr>
-          <td class="inputs__input">
-            <p class="input">
-              <label class="input__label title-3" for="name">Your Name</label>
-              <input
-                class="input__field"
-                id="name"
-                name="name"
-                type="text"
-                placeholder="Hermione Granger"
-                value="Hermione Granger"
-              >
-            </p>
-          </td>
-          <td class="inputs__description summary">Filled</td>
-        </tr>
-        <tr>
-          <td class="inputs__input">
-            <p class="input input--with-error">
-              <label class="input__label title-3" for="password">Password</label>
-              <input
-                class="input__field"
-                id="password"
-                name="password"
-                type="password"
-                placeholder="5+ characters"
-                data-focused
-              >
-              <span class="input__error alert">
-                Your password must be at least <strong>6 characters</strong> long.
-              </span>
-            </p>
-          </td>
-          <td class="inputs__description inputs__description--with-error summary">Focused with error message</td>
-        </tr>
-        <tr>
-          <td class="inputs__input">
-            <p class="input">
-              <label class="input__label title-3" for="email">Email Address</label>
-              <input
-                class="input__field"
-                id="email"
-                name="email"
-                type="email"
-                placeholder="john@gmail.com"
-                disabled
-              >
-            </p>
-          </td>
-          <td class="inputs__description summary">Inactive</td>
-        </tr>
-      </tbody>
-    </table>
-  </article>
-  <article class="ui-block">
-    <h2 class="ui-block__title">Fonts - <span class="ui-block__title-description">Montserrat</span></h2>
-    <ul class="fonts">
-      <li class="title-1">Page Title | 28px Bold #1E1A50</li>
-      <li class="title-2">Secondary Title | 16px Bold #1E1A50</li>
-      <li class="title-3">Tertiary Title | 14px Bold #1A2950</li>
-      <li class="input-placeholder">Input Placeholder | 14px Medium #767E96</li>
-      <li>
-        <a class="link" href="#link-example">Link | Montserrat Medium #738BFD</a>
-      </li>
-      <li>Basic Paragraph | 12px Medium #1A2950</li>
-      <li class="summary">Board Summary Label | 12px Medium #767E96</li>
-      <li class="alert">Alert Message | 12px Medium #F55623</li>
-    </ul>
-  </article>
-  <article class="ui-block">
-    <h2 class="ui-block__title">Cards</h2>
-    <div class="ui-block__content cards">
-      <div class="cards__card">
-        <p class="cards__description summary">Default Card Background</p>
-        <div class="cards__example card">
-          <span class="visually-hidden">Default Card Example</span>
-        </div>
-      </div>
-      <div class="cards__card">
-        <p class="cards__description summary">Hovered Card Background</p>
-        <div class="cards__example card" data-hovered>
-          <span class="visually-hidden">Hovered Card Example</span>
-        </div>
-      </div>
-    </div>
-  </article>
-  <article class="ui-block">
-    <h2 class="ui-block__title">Icons</h2>
-  </article>
+  <h1 class="visually-hidden">Design System</h1>
+  <h2 class="title">Typography</h2>
+  <p>
+    <strong>Make me bold (strong)</strong><br>
+    <em>Make me italic (emphasis)</em>
+  </p>
+  <p>
+    <span class="text text--arial">I'm from the Arial font family!</span><br>
+    <span class="text text--times">And I'm from the Times New Roman font family!</span>
+  </p>
+  <p>
+    <u>Make this text be underlined</u>
+  </p>
+  <p>
+    <s>And put a line through this one</s>
+  </p>
+  <h2 class="title">Headings</h2>
+  <h1>This is a &lt;h1&gt; tag</h1>
+  <h2>This is a &lt;h2&gt; tag</h2>
+  <h3>This is a &lt;h3&gt; tag</h3>
+  <h2 class="title">Colors</h2>
+  <ul class="items">
+    <li class="color color--primary">Primary</li>
+    <li class="color color--accent">Accent</li>
+  </ul>
+  <h2 class="title">Buttons</h2>
+  <ul class="items">
+    <li>
+      <p class="label">Primary</p>
+      <button class="button button--primary" type="button">Button</button>
+    </li>
+    <li>
+      <p class="label">Accent</p>
+      <button class="button button--accent" type="button">Button</button>
+    </li>
+    <li>
+      <p class="label">Disabled</p>
+      <button class="button" type="button" disabled>Button</button>
+    </li>
+  </ul>
 </main>
 </body>
 </html>
