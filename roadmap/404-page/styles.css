@@ -1,0 +1,104 @@
+:root {
+  --color-text: #FAE6FA;
+  --color-bg-1: #F173C6;
+  --color-bg-2: #FF6B96;
+  --color-bg-3: #F86EAC;
+  --color-gradient-1: #F185CE;
+  --color-gradient-2: #F37BBF;
+  --color-gradient-3: #FB6EA2;
+  --color-gradient-4: #FE77A2;
+
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 300px;
+  min-height: 100vh;
+  padding: 0 10px;
+  line-height: 1.2;
+  font-family: 'Noto Sans', sans-serif;
+  font-variation-settings: 'wdth' 100;
+  color: var(--color-text);
+  background-color: var(--color-bg-3);
+  background-image:
+    radial-gradient(
+      circle at 10% 90%,
+      var(--color-gradient-1),
+      var(--color-gradient-1) 10%,
+      var(--color-gradient-2) 20%,
+      transparent 20%,
+      transparent 100%
+    ),
+    radial-gradient(
+      circle at 90% 10%,
+      var(--color-gradient-3),
+      var(--color-gradient-3) 10%,
+      var(--color-gradient-4) 20%,
+      transparent 20%,
+      transparent 100%
+    ),
+    linear-gradient(to left, var(--color-bg-2), var(--color-bg-1));
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+a {
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  opacity: 0.7;
+}
+
+.content {
+  margin-bottom: 20%;
+  text-align: center;
+  font-weight: 500;
+}
+
+.logo {
+  display: block;
+  margin-bottom: 40px;
+  text-decoration: none;
+}
+
+.error-code {
+  margin: 0 0 20px;
+  font-weight: 600;
+  font-size: 108px;
+}
+
+.description {
+  max-width: 350px;
+  margin: 0 0 40px;
+}
+
+.comment {
+  margin: 0;
+  font-weight: 300;
+}
