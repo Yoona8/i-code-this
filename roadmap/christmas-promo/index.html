@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Christmas promo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="page">
+<main class="content">
+  <svg style="display: none;" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="i-tree" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M10 21v-3H3l5-5H5l5-5H7l5-5 5 5h-3l5 5h-3l5 5h-7v3h-4Z"/>
+    </symbol>
+    <symbol id="i-close" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M13.46 12 19 17.54V19h-1.46L12 13.46 6.46 19H5v-1.46L10.54 12 5 6.46V5h1.46L12 10.54 17.54 5H19v1.46L13.46 12Z"/>
+    </symbol>
+  </svg>
+</main>
+<div class="modal-overlay"></div>
+<dialog class="modal">
+  <button class="modal__close" type="button" aria-label="Close promo">
+    <svg width="26" height="26">
+      <use href="#i-close" />
+    </svg>
+  </button>
+  <div class="modal__content">
+    <h1 class="modal__title">
+      <svg width="44" height="44">
+        <use href="#i-tree" />
+      </svg>
+      Merry Christmas!
+    </h1>
+    <p class="modal__text">You completed all your December's tasks, so we decided to get you a gift:</p>
+    <p class="modal__highlight">50% off on your Yearly Premium Plan</p>
+    <a class="button" href="#">Get your gift</a>
+  </div>
+</dialog>
+</body>
+</html>
