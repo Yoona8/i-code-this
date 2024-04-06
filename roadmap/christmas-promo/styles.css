@@ -1,0 +1,127 @@
+:root {
+  --color-cool-gray-000: #FFFFFF;
+  --color-cool-gray-100: #EEF0F2;
+  --color-cool-gray-500: #9CA0A6;
+  --color-cool-gray-900: #232E4D;
+  --color-highlight-500: #CA922E;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 300px;
+  min-height: 100vh;
+  padding: 0 10px;
+  font-size: 16px;
+  line-height: 1.6;
+  font-family: 'Noto Sans', sans-serif;
+  font-variation-settings: 'wdth' 100;
+  color: var(--color-cool-gray-900);
+  background-color: var(--color-cool-gray-100);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.button {
+  display: inline-block;
+  padding: 14px 25px;
+  font-family: 'Noto Sans', sans-serif;
+  font-variation-settings: 'wdth' 100;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--color-cool-gray-000);
+  background-color: var(--color-cool-gray-900);
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background-color: transparent;
+  background-image:
+    radial-gradient(circle, var(--color-cool-gray-000) 0, var(--color-cool-gray-000) 2px, transparent 4px, transparent),
+    radial-gradient(circle, var(--color-cool-gray-000) 0, var(--color-cool-gray-000) 2px, transparent 4px, transparent);
+  background-position: 0 0, 40px 40px;
+  background-size: 80px 80px;
+}
+
+.modal {
+  position: absolute;
+  z-index: 100;
+  display: block;
+  max-width: 550px;
+  padding: 0;
+  font-family: 'Noto Sans Mono', monospace;
+  text-align: center;
+  background-color: var(--color-cool-gray-000);
+  border: none;
+  border-radius: 5px 25px 5px 5px;
+  box-shadow: 0 5px 100px 100px rgba(0, 0, 0, 0.1);
+}
+
+.modal__close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  color: var(--color-cool-gray-500);
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.modal__close:hover {
+  color: var(--color-cool-gray-900);
+}
+
+.modal__content {
+  padding: 90px 80px;
+}
+
+.modal__title {
+  position: relative;
+  margin: 0 0 40px;
+  padding-top: 48px;
+  font-size: 30px;
+}
+
+.modal__title svg {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.modal__highlight {
+  margin-bottom: 40px;
+  color: var(--color-highlight-500);
+}
