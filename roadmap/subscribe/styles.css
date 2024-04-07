@@ -1,0 +1,84 @@
+:root {
+  --color-text: #000000;
+  --color-text-contrast: #ffffff;
+  --color-background: lightblue;
+  --color-background-form: #ffffff;
+  --color-primary: #3e6390;
+  --color-controls-border: #cccccc;
+  --color-for-shadow: 62, 99, 144,;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.4;
+  font-family: 'Noto Sans', sans-serif;
+  font-variation-settings: 'wdth' 100;
+  color: var(--color-text);
+  background-color: var(--color-background);
+}
+
+.visually-hidden,
+.input__checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 300px;
+  min-height: 100vh;
+  padding: 0 10px;
+}
+
+.subscribe-form {
+  padding: 40px;
+  color: var(--color-text);
+  background-color: var(--color-background-form);
+  border-radius: 6px;
+  box-shadow: 0 15px 25px 5px rgba(var(--color-for-shadow) 0.1);
+}
+
+.title {
+  margin: 0 auto 20px;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.subscribe-form__description {
+  max-width: 450px;
+  margin-block: 20px;
+  margin-inline: auto;
+  text-align: center;
+}
+
+.button {
+  display: inline-block;
+  padding: 14px 25px;
+  font: inherit;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--color-text-contrast);
+  background-color: var(--color-primary);
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 12px 10px -7px rgba(var(--color-for-shadow) 0.5);
+}
